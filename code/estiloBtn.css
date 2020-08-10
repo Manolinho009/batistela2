@@ -1,0 +1,38 @@
+#confetti-container {
+  cursor: pointer;
+}
+
+.confetti {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  opacity: 0.75;
+  z-index: 0;
+  /* gpu acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.confetti.blue {
+  background: #00a8ff;
+}
+.confetti.green {
+  background: #4cd137;
+}
+.confetti.yellow {
+  background: #fbc531;
+}
+.confetti.red {
+  background: #e84118;
+}
+.confetti.pink {
+  background: #ff9ff3;
+}
+.confetti.circle {
+  border-radius: 50%;
+}
+.confetti.rectangle {
+  padding: 0 1px;
+}

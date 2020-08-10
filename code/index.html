@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloBtn.css">
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>A e isso ai Prefiro o firebase</title>
+
+  </head>
+  <body style="background-color: #012;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">SEI LA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Empresa</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid mt-4" style="border-radius: 30px;">
+            <div class="container">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nome</label>
+                            <input type="text" class="form-control" id="nome" aria-describedby="nome" placeholder="Nome">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Valor de Horas Trabalhadas</label>
+                            <input type="text" class="form-control" id="valHoras" placeholder="Valor de Horas Trabalhadas">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Quantidade de Horas trabalhadas</label>
+                            <input type="text" class="form-control" id="quantHoras" placeholder="Quantidade de Horas trabalhadas">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Imposto de Renda</label>
+                            <input type="text" class="form-control" id="inposto" placeholder="Imposto de Renda">
+                        </div>
+                            
+                        <button type="button" onclick="calcular()" class="btn btn-primary">calcular salário</button>
+                        <button type="reset" onclick="emit()"  id="confetti-container" class="btn btn-primary">limpar campos</button>
+                        <button type="button" onclick="historico()" class="btn btn-primary">mostrar salários calculados</button>
+                      </form> 
+            </div>
+          </div>        
+    </div>
+
+    <div class="h6" style="color: white;">
+        <div id="erroDiv"></div>
+        <div id="erroDiv2"></div>
+    </div>
+
+<div class="container">
+        <div class="system" style="height: 12px;">
+            <div class="sun"></div>
+            <div class="mer-path"></div>
+              <div class="mer"></div>
+            <div class="ven-path"></div>
+            <div class="ven"></div>
+            <div class="ear-path"></div>
+            <div class="ear"><div class="lune"></div></div>
+            <div class="mar-path"></div>
+            <div class="mar">
+              <div class="pho"></div>
+              <div class="dem"></div>
+            </div>
+            <div class="jup-path"></div>
+            <div class="jup">
+              <div class="spot"></div>
+              <div class="jove io"></div>
+              <div class="jove eur"></div>
+              <div class="jove gan"></div>
+              <div class="jove cal"></div>
+            </div>
+            <div class="sat-path"></div>
+            <div class="sat">
+              <div class="f-ring"></div>
+              <div class="a-ring"></div>
+              <div class="b-ring"></div>
+              <div class="c-ring"></div>
+            </div>
+            <div class="ura-path"></div>
+            <div class="ura">
+              <div class="e-ring"></div>
+            </div>
+            <div class="nep-path"></div>
+            <div class="nep">
+              <div class="spot"></div>
+            </div>
+            <div class="plu-path"></div>
+            <div class="plu"></div>
+          </div>
+</div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
